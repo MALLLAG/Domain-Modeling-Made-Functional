@@ -141,7 +141,7 @@ ACL의 진정한 목적은 단순한 유효성 검사나 데이터 부패 방지
 따라서 작업 흐름은 이러한 불필요한 데이터를 걸러내고 청구 맥락만을 위한 **새로운 이벤트**를 생성해야 합니다.   
 이 새로운 이벤트의 예시가 **`BillableOrderPlaced`**이며, 이 이벤트는 `OrderId`, `BillingAddress`, `AmountToBill`과 같이 청구에 필요한 최소한의 데이터만 포함하도록 설계됩니다.
 
-```json
+```
 data BillableOrderPlaced =
     OrderId
     AND BillingAddress
